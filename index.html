@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div  class="mainContainer">
+        <h2 id="welcome">MasterJi's Validation</h2>
+        <form class="form" action="">
+        <div class="formData">
+            <label for="name">Name:</label>
+            <input id="name" type="text"  placeholder="Enter Your Name">
+            <span class="validationMessage" id="nameValidation"></span>
+        </div>
+        <div class="formData">
+            <label for="email">Email:</label>
+            <input id="email" type="email"  placeholder="Enter Your Email">
+            <span class="validationMessage" id="emailValidation"></span>
+        </div>
+        <div class="formData">
+            <label for="username">Username:</label>
+            <input id="username" type="text"  placeholder="Enter Your Username">
+            <span class="validationMessage" id="usernameValidation"></span>
+        </div>
+        <div class="formData">
+            <label for="password">password:</label>
+            <input id="password" type="password" minlength="8"  placeholder="**************">
+            <span class="validationMessage" id="passwordValidation"></span>
+        </div>
+        <div class="formData">
+            <label for="confirmPassword">Confirm password:</label>
+            <input id="confirmPassword" type="password" minlength="8"  placeholder="**************">
+            <span class="validationMessage" id="confirmPasswordValidation"></span>
+        </div>
+        <button id="submitBtn" type="submit">Submit</button>
+    </form>
+    </div>
+</body>
+<script src="/main.js"></script>
+</html>

@@ -1,0 +1,81 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body{
+    background-color: black;
+    color: white;
+    background-image: url("/—Pngtree—dark\ purple\ minimalistic\ gradient\ banner_1055404.jpg");
+    background-repeat: no-repeat;
+    background-size: 100vw 100vh;
+}
+
+.mainContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;    
+    gap: 10px;
+}
+
+.form{
+    font-size: 13px;
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    background-color: #1616167a;
+    padding: 30px;
+    border-radius: 10px;
+    backdrop-filter: blur(30px);
+    /* outline: 2px solid rgb(180, 180, 180); */
+    outline-offset: 5px;
+    box-shadow: 5px 5px 13px black;
+
+}
+
+.formData{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    gap: 5px;
+}
+
+.formData > input{
+    height: 30px;
+    padding: 0px 10px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    border: none;
+    font-size: 14px;
+    background-color: rgba(15, 15, 15, 0.425);
+    color: white;
+}
+
+.formData > input::placeholder{
+    font-size: 13px;
+    color: rgba(105, 105, 105, 0.712);
+}
+
+.form>button{
+    height: 30px;
+    font-size: 13px;
+    border: none;
+    background-color: #b10285;
+    color: white;
+    border-radius: 5px;
+}
+
+.form>button:hover{
+    background-color: #8d006a;
+    box-shadow: 0px 0px 20px rgb(247, 93, 208);
+}
+.form>button:active{
+    translate: 0px 2px;
+}
+
+.validationMessage{
+    color: rgb(255, 16, 16);
+    font-size: 12px;
+}
