@@ -13,11 +13,11 @@ const imagesPath = [
   "/public/6.jpg",
 ];
 
-imageGellary.innerHTML = imagesPath.map(
-  (path) => `<div class="w-30 h-30">
+imageGellary.innerHTML = imagesPath.map((path) => {
+  return `<div class="w-30 h-30">
         <img class=" image h-[100%] rounded-xl" src=${path} alt="" srcset="">
-      </div>`
-);
+      </div>`;
+});
 
 Array.from(images).map((image) => {
   image.addEventListener("click", (e) => {
