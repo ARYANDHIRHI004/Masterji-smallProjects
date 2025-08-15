@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./src/index.css">
+</head>
+
+<body class="overflow-hidden">
+
+  <div id="modal"
+    class="absolute flex flex-col items-center justify-center w-full h-full bg-[#00000080] backdrop-blur-xl hidden z-10 ">
+    <button id="closeBtn"
+      class=" text-white font-[600] hover:cursor-pointer hover:bg-[#ffffff4d] transition-all duration-200 text-2xl w-10 h-10 mb-2 rounded-full">X</button>
+    <div class="bg-white p-10 flex items-center justify-center w-[40%]">
+      <img id="modalImage" class=" w-[100%]" src="/public/istockphoto-926196952-170667a.jpg" alt="" srcset="">
+    </div>
+  </div>
+
+
+  <div class="bg-amber-500 w-200 h-200 -top-80 -left-80 absolute rounded-full blur-[200px]"></div>
+  <div class="bg-pink-500 w-200 h-200 -bottom-80 -right-80 absolute rounded-full blur-[200px]"></div>
+
+  <div class=" relative flex flex-col justify-center items-center h-screen gap-5 " id="app">
+    <h1 class="text-5xl font-[700] text-black ">Welcome To masterJi's Gallery</h1>
+    <div class="h-1 w-[50%] bg-linear-to-r from-transparent via-black to-transparent"></div>
+    <div id="imageGellary"
+      class="grid grid-cols-8 items-start content-start gap-5 bg-[#8ff2ff69] h-[80%]  p-10 overflow-y-auto shadow-2xl shadow-black rounded-2xl">
+    </div>
+</body>
+<script src="/src/main.js"></script>
+
+</html>
