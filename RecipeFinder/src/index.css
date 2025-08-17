@@ -1,0 +1,13 @@
+@import "tailwindcss";
+
+.hide-scroll {
+  overflow: hidden; /* Hides both horizontal and vertical scrollbars */
+}
+
+.hide-scroll-x {
+  overflow-x: hidden; /* Hides only the horizontal scrollbar */
+}
+
+.hide-scroll-y {
+  overflow-y: hidden; /* Hides only the vertical scrollbar */
+}

@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vite App</title>
+  <link rel="stylesheet" href="src/index.css">
+</head>
+
+<body>
+  <div id="app">
+    <nav class="flex p-5 justify-between items-cente  r">
+      <div class="text-[#ff0040] font-[700]">Logo</div>
+      <div class="flex gap-5 items-center">
+        <div class="border-black border w-120 h-8 rounded-2xl ">
+          <input class="w-120 h-8" type="text">
+        </div>
+        <button class="bg-[#ff0040] w-30 h-10 rounded-4xl text-white hover:cursor-pointer hover:bg-[#db0037]">Search
+          Meal</button>
+      </div>
+    </nav>
+
+    <main class="mt-5">
+      <div id="remdomMeals">
+        <div id="oneRendomMeal" class="p-10 border-1 border-black  w-[80vw] m-auto rounded-2xl flex  gap-10">
+          <img class="w-120 rounded-2xl" src="" alt="">
+          <div>
+            <p id="ingredients"></p>
+            <p id="mealName" class="text-3xl font-[600]"></p>
+            <p id="mealCategory" class="mt-1 text-neutral-400"></p>
+            <p id="mealInstructions" class="mt-5 text-neutral-500"></p>
+            <a href="" id="link" class="mt-5 text-[#ff0040]"></a>
+          </div>
+        </div>
+        <div id="rendomMealsLeast" class=" p-10 w-screen columns-5 gap-5 "></div>
+      </div>
+    </main>
+  </div>
+  <script type="module" src="/src/main.js"></script>
+</body>
+
+</html>
