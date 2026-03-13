@@ -1,8 +1,9 @@
 import { Search, SearchIcon } from "lucide-react";
 import React from "react";
 import Swipper from "./Swipper";
-import image1 from "../assets/image1.png";
-import image2 from "../assets/image2.png";
+import heroSectionImages from "../assets/heroSectionImages.png";
+import Items from "./Items";
+import HorizontalCards from "./HorizontalCards";
 
 const HeroSection = () => {
   return (
@@ -13,19 +14,20 @@ const HeroSection = () => {
           <button className="bg-primary px-8 py-1 rounded-full"><SearchIcon width={12} color="white"/></button>
         </div>
       </div>
-      <div className="w-[90%] flex justify-between items-center h-[80%] p-5 m-auto ">
+      <div className=" w-[90%] flex justify-between items-center h-[80%] p-5 m-auto ">
         <div className="h-full w-[50%] m-2 flex items-center justify-center">
-          <div className="font-primary text-9xl">
+          <div className="font-primary text-7xl xl:text-[110px]">
             <h1>Fashion and</h1>
             <h1 className="text-primary">Trend</h1>
           </div>
         </div>
-        <div className="h-full w-[50%] m-2 flex  ">
-          <img className="0 absolute h-[70%] bottom-0" height={10} src={image1} alt="" />
-          <img height={10} className=" absolute h-[85%] bottom-0 right-50 scale-x-[-1] transform" src={image2} alt="" />
+        <div className="h-full w-[50%] m-2 hidden lg:flex  ">
+          <img className="0 absolute bottom-30 xl:h-[70%]" src={heroSectionImages} alt="" />
         </div>
+        
       </div>
       {/* <Swipper/> */}
+      <Items />
     </div>
   );
 };
