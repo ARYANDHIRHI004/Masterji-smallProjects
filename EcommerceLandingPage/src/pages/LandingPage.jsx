@@ -4,6 +4,7 @@ import FooterSection from '../components/FooterSection'
 import Navbar from '../components/Navbar'
 import Items from './Items'
 import AllItems from './AllItems'
+import BentoGrid from '../components/BentoGrid'
 
 const LandingPage = () => {
   return (
@@ -12,6 +13,7 @@ const LandingPage = () => {
         <HeroSection />
         <Items/>
         <AllItems/>
+        <BentoGrid/>
         <FooterSection />
     </>
   )

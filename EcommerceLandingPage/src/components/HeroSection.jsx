@@ -22,7 +22,7 @@ const HeroSection = () => {
           </div>
         </div>
         <div className="h-full w-[50%] m-2 hidden lg:flex  ">
-          <img className="0 absolute bottom-30 xl:h-[70%]" src={heroSectionImages} alt="" />
+          <img className="0 absolute bottom-30 lg:h-[40%] xl:h-[70%]" src={heroSectionImages} alt="" />
         </div>
         
       </div>
